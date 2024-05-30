@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 .menu {
@@ -30,10 +31,12 @@
     height: 65px;
 }
 
-button {
+/* BOTÃO ANTIGO */
+
+/* button {
     color: white;
     background-color: #C51111;
-    border-radius: 3px;
+    border-radius: 10px;
     border: none;
     width: 200px;
     height: 50px;
@@ -46,24 +49,23 @@ button {
 button:hover {
     background-color: #800000;
     transition: 0.5s ease-in-out; 
-}
+} */
 
 .formulario-fale-conosco {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     flex-direction: column;
-    top: 30%;
-    padding: 20px;
-    border-radius: 5px; 
+    justify-content: center;
+    align-items: center;
 }
 
-input {
+/* input {
     height: 40px;
     border-radius: 5px;
     border: 1px solid gray;
     padding-left: 5px;
     outline-color: #18D80F;
-}
+} */
 
 textarea {
     width: 270px;
@@ -84,12 +86,68 @@ body {
     height: 100vh;
 }
 
-.caixa-mae {
+/* .caixa-mae {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 100px;
     height: 100vh;
+} */
+
+.caixa-mae {
+    margin-top: 50px;
+}
+
+.caixa-mae form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.caixa-mae form input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px 10px;
+    background-color: #242424;
+    font-size: 15px;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.caixa-mae form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px 10px;
+    background-color: #242424;
+    font-size: 15px;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 250px;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+form input.btn-button {
+    width: 170px;
+    background-color: #C51111;
+    color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+form input.btn-button:hover {
+    box-shadow: 0px 0px 8px #800000;
+    transform: scale(1.05);
 }
 
 .video-caixa {

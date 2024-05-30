@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/fale-conosco.css" />
-    <title>Fale Conosco</title>
-  </head>
-  <body>
-    <div>
-      <div class="menu">
-        <div class="header">
-          <img src="./img/logo-header.png" alt="logo mario" />
-          <a href="index.html">Home</a>
-          <a href="nossos-servicos.html">Nossos Serviços</a>
-          <a href="fale-conosco.html">Fale Conosco</a>
-        </div>
-      </div>
-      <div class="caixa-mae">
-        
-        <form
-          class="formulario-fale-conosco"
-          action="https://formcarry.com/s/cyVs1tg8jkl"
-          method="POST"
-          enctype="multipart/form-data"
-        >
-          <input placeholder="Seu nome" type="text" name="nome" />
-          <input placeholder="Seu telefone" type="tel" name="telefone" />
-          <textarea
-            placeholder="Digite seu problema aqui..."
-            name="duvida"
-          ></textarea>
-          <button type="submit">Pedir Orçamento</button>
-        </form>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/fale-conosco.css" />
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- FIM DA FONTE-->
+  <title>Fale Conosco</title>
+</head>
+
+<body>
+  <div>
+    <div class="menu">
+      <div class="header">
+        <img src="./img/logo-header.png" alt="logo mario" />
+        <a href="index.html">Home</a>
+        <a href="nossos-servicos.html">Nossos Serviços</a>
+        <a href="fale-conosco.html">Fale Conosco</a>
       </div>
     </div>
+    <div class="caixa-mae">
 
-    <div class="logo">
-        <img src="./img/logo.png" alt="">
+      <form class="formulario-fale-conosco" action="https://formcarry.com/s/cyVs1tg8jkl" method="POST"
+        enctype="multipart/form-data">
+        <input placeholder="Seu nome" type="text" name="nome" required />
+        <input placeholder="Seu e-mail" type="text" name="e-mail" required />
+        <input placeholder="Seu telefone" type="tel" name="telefone" />
+        <textarea placeholder="Digite seu problema aqui..." name="duvida"></textarea>
+        <input class="btn-button" type="submit" value="Solicitar Orçamento">
+        <!-- <button type="submit">Solicitar Orçamento</button> -->
+      </form>
     </div>
+  </div>
 
-    <div class="video-caixa">
-      <video src="./img/video.mp4" autoplay muted loop></video>
-      <div class="mascara"></div>
-    </div>
-  </body>
+  <div class="logo">
+    <!-- <img src="./img/logo.png" alt=""> -->
+  </div>
+
+  <div class="video-caixa">
+    <video src="./img/video.mp4" autoplay muted loop></video>
+    <div class="mascara"></div>
+  </div>
+</body>
+
 </html>
