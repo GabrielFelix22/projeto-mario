@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 .log-mario {
@@ -11,7 +12,7 @@
 button {
     color: white;
     background-color: #C51111;
-    border-radius: 3px;
+    border-radius: 15px;
     border: none;
     width: 200px;
     height: 50px;
@@ -19,15 +20,19 @@ button {
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 30px;
+    transition: .2s ease-in-out;
 }
 
 button:hover {
-    background-color: #800000;
-    transition: 0.5s ease-in-out; 
+    /* background-color: #800000;
+    transition: 0.5s ease-in-out; */
+    box-shadow: 0px 0px 8px #800000;
+    transform: scale(1.05);
 }
 
 .imagem-mario-luigi {
     height: 500px;
+    margin-bottom: 90px;
 }
 
 body {
@@ -119,23 +124,43 @@ p {
     padding: 20px;
     border-radius: 5px;  
     transition: left 1s ease-in-out;  
+    background-color: #242424;
+}
+
+.formulario-fale-conosco button {
+    margin: 0 auto;
 }
 
 input {
     height: 40px;
     border-radius: 5px;
-    border: 1px solid gray;
-    padding-left: 5px;
-    outline-color: #18D80F;
+    /* border: 1px solid gray; */
+    border: none;
+    padding-left: 8px;
+    outline: none;
+    font-size: 14px;
+    background-color: #313131c0;
+    color: #FFFFFF;
 }
 
 textarea {
     width: 270px;
     height: 100px;
     border-radius: 5px;
-    border: 1px solid gray;
-    padding-left: 5px;
-    outline-color: #18D80F;
+    /* border: 1px solid gray; */
+    border: none;
+    padding-left: 8px;
+    outline: none;
+    resize: none;
+    max-height: 350px;
+    font-size: 14px;
+    background-color: #313131c0;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+
+textarea::placeholder {
+    padding-top: 5px;
 }
 
 .mascara-formulario {
