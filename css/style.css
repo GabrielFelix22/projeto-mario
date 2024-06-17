@@ -31,8 +31,8 @@ button:hover {
 }
 
 .imagem-mario-luigi {
-    height: 500px;
-    margin-bottom: 90px;
+    height: 480px;
+    margin-bottom: 120px;
 }
 
 body {
@@ -50,7 +50,7 @@ body {
 
 .caixa-principal {
     width: 40%;
-    
+    margin-bottom: 80px;
 }
 
 .caixa-video {
